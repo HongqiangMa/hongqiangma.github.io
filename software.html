@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Research Website of Dr. Yang Liu's Laboratory</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Hongqiang Ma's website">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <p class="lead"> University of Illinois Urbana-Champaign </p>
+            <h1>Hongqiang Ma's website</h1>
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="software.html">Software</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#Gradient Fitting"> Gradient Fitting </a></li>
+                  <li><a href="#WindSTORM"> WindSTORM </a></li>
+                  <li><a href="#EVER"> EVER </a></li>
+                  <li><a href="#CNN-based Nuclei Segmentation"> CNN-based Nuclei Segmentation </a></li>
+               </ul>
+            </div>
+            <div class="span8 offset1">
+               <section id="Gradient Fitting">
+                  <div class="page-header">
+                     <h3><a href="">Gradient Fitting </a></h3>
+                     <hr>
+                     <p>Gradient fitting algorithm is for high-speed 3D localization of fluorescent emitters in astigmatism-based microscopy (e.g., STORM and PALM).</p>
+                     <p><b> Programming Language:</b> MATLAB </p>
+                     <p><b>Publication:</b> The algorithm of this code has been published in the following paper: Ma H, Xu J, Jin J, Gao Y, Lan L, Liu Y. 
+                        Fast and precise 3D fluorophore localization based on gradient fitting. <a href="https://www.nature.com/articles/srep14335">
+                         Scientific Reports, 5: 14335, 2015. </a></p>
+                     <p><b>Source Code:</b> <a href="https://github.com/YangLiuLab/GradientFit">Source code is available on our github depository.</a></p>
+                  </div>
+               </section>
+               <section id="WindSTORM">
+                  <div class="page-header">
+                     <h3><a href="">WindSTORM</a></h3>
+                     <hr>
+                     <p>WindSTORM is a high-speed high-density single-molecule localization algorithm based on linear deconvolution for super-resolution microscopy (e.g., STORM and PALM). </p>
+                     <p><b> Programming Language:</b> MATLAB </p>
+                     <p><b>Publication:</b> The algorithm of this code has been published in the following paper: Ma H, Xu J, Liu Y. 
+                        WindSTORM: Robust online image processing for high-throughput nanoscopy. <a href="https://advances.sciencemag.org/content/5/4/eaaw0683">
+                           Science Advances, eaaw0683, 2019. </a></p>
+                     <p><b>Source Code:</b> <a href="https://pitt.box.com/v/WindSTORM">The source code and testing dataset are available on our shared drive (password: Biophotonics).</a></p>
+                  </div>
+               </section>
+               <section id="EVER">
+                  <div class="page-header">
+                     <h3><a href="">EVER</a></h3>
+                     <hr>
+                     <p>EVER stands for extreme-value based emitter recovery, which is used to correct for heterogeneous background in the raw data of single moelcule localization microscopy (e.g., STORM and PALM).</p>
+                     <p><b> Programming Language:</b> ImageJ Plugin (Java) </p>
+                     <p><b>Publication:</b> The algorithm of this code has been described in detail in the following two publications: <br>
+                        1. Ma H, Xu J, Liu Y. WindSTORM: Robust online image processing for high-throughput nanoscopy. <a href="https://advances.sciencemag.org/content/5/4/eaaw0683">
+                           Science Advances, eaaw0683, 2019. </a></p>
+                        2. Ma H, Jiang W, Xu J, Liu Y. Enhanced super-resolution microscopy by extreme value based emitter recovery. <a href="https://doi.org/10.1038/s41598-021-00066-3">Scientific Reports, 11, 20417, 2021.</a></p>
+                     <p><b>Source Code:</b> <a href="https://github.com/YangLiuLab/EVER-ImageJ-Plugin">The source code is available on our github depository.</a></p>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+         
+      </script>
+   </body>
+</html>
